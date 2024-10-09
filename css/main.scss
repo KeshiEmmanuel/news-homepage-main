@@ -1,0 +1,58 @@
+@use "globals";
+
+:root {
+    --primary-orange-color: hsl(35, 77%, 62%);
+    --primary-red-color: hsl(5, 85%, 63%);
+    --neutral-off-white: hsl(36, 100%, 99%);
+    --neutral-grayish-blue: hsl(233, 8%, 79%);
+    --neutral-darkish-grayish-blue: hsl(236, 13%, 42%);
+    --neutral-very-dark-blue: hsl(240, 100%, 5%);
+
+    --normal-weight: 400;
+    --bold-weight: 700;
+    --black-weight: 800;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.nav-menu {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: -100%;
+    background-color: white;
+    width: 60%;
+    height: 100vh;
+    padding-top: 13em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+
+    padding-left: 3em;
+    .nav-item a {
+        font-size: 2rem;
+        color: var(--neutral-very-dark-blue);
+    }
+    .nav-close {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        img {
+            width: 30px;
+        }
+    }
+}
+.show-menu {
+    right: 0%;
+}
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo {
+    width: 50px;
+}

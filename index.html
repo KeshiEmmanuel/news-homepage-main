@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+        <title>Frontend Mentor | News homepage</title>
+        <link rel="stylesheet" href="/css/main.css" />
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <div class="container nav-header">
+                    <div class="nav-logo">
+                        <img src="/assets/images/logo.svg" alt="navbarlogo" />
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">New</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Popular</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Trending</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
+                        <div class="nav-close hide-desktop">
+                            <img src="/assets/images/icon-menu-close.svg" alt="nav-close" />
+                        </div>
+                    </ul>
+                    <div class="nav-open hide-desktop">
+                        <img src="/assets/images/icon-menu.svg" alt="menu" />
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <article class="main-news-feed">
+                <!-- Left-col -->
+                <div class="left-col">
+                    <img src="/assets/images/image-web-3-desktop.jpg" alt="growth" />
+                    <div class="news-content">
+                        <p class="news-headline">The Bright Future of Web 3.0?</p>
+                        <div class="news-subtitle">
+                            <p>
+                                We dive into the next evolution of the web that claimsto put power
+                                of the plaform back to the hands of the people. But is it really
+                                fulfilling it promise?
+                            </p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right-col -->
+                <div class="right-col">
+                    <h2>New</h2>
+                    <div class="right-col-news-feeds">
+                        <div class="right-col-feed-2 right-col-feed">
+                            <h3>Hydrogen vs Electric cars</h3>
+                            <p>Will hydrogen-fueled vechiles ever catxch up with EV's</p>
+                        </div>
+                        <div class="right-col-feed-2 right-col-feed">
+                            <h3>The Downside of AI Artistry</h3>
+                            <p>What are the adverse effect of on-demand AI image generation?</p>
+                        </div>
+                        <div class="right-col-feed-3 right-col-feed">
+                            <h3>is VC funding drying up?</h3>
+                            <p>
+                                Private funding by VC firms down by 50% YOY.We take a look at what
+                                that means
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="news-feed">
+                <div class="news-feed-1">
+                    <img src="/assets/images/image-retro-pcs.jpg" alt="retro-pcs" />
+                    <div>
+                        <h5>01</h5>
+                        <h3>Reviving Retro PCs</h3>
+                        <p>What happens when old pcs are given modern upgrade?</p>
+                    </div>
+                </div>
+                <div class="news-feed-1">
+                    <img src="/assets/images/image-top-laptops.jpg" alt="retro-pcs" />
+                    <div>
+                        <h5>02</h5>
+                        <h3>Top 10 laptops of 2022</h3>
+                        <p>Our picks for various needs and budgets</p>
+                    </div>
+                </div>
+                <div class="news-feed-1">
+                    <img src="/assets/images/image-gaming-growth.jpg" alt="retro-pcs" />
+                    <div>
+                        <h5>02</h5>
+                        <h3>Growth of gaming</h3>
+                        <p>How the epidemic sparked fresh opportunties</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <script>
+            document.querySelector(".nav-open").addEventListener("click", () => {
+                document.querySelector(".nav-menu").classList.toggle("show-menu");
+            });
+            document.querySelector(".nav-close").addEventListener("click", () => {
+                document.querySelector(".nav-menu").classList.toggle("show-menu");
+            });
+        </script>
+    </body>
+</html>
